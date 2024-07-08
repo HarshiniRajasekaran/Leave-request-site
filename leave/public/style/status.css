@@ -1,0 +1,20 @@
+.navbar{
+    width: 1500px;
+    height:50px;
+    margin: auto;
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height:70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 20px;
+    font-family: Arial;
+    float: left;
+    padding-top: 17px;
+    padding-left: 10px;
+    
+}

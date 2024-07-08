@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Form</title>
+    <link href="./style/leave.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Dataweiser</h2>
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/status">STATUS</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="/">LOGOUT</a></li>
+            
+            </ul><br><br>
+        </div>
+        
+    </div>
+
+
+    
+    <div class="form">
+        
+            
+        <form method="post" action="/status">
+            <h1>Leave Form</h1>  
+            <h2 style="text-align: center;">Fill the form to apply leave</h2>
+            Name of the employee: <input type = "text" placeholder = "First Name" name="fname" />
+            <input type = "text" placeholder="Last Name" name = "lname" /><br><br>
+            Employee id:<input type="text" placeholder="Employee id" name="empid"><br><br>
+            Email:<input type="email" placeholder="Email" name="email"><br><br>
+            Phone No:<input type="number" placeholder="Areacode" name="code"> <input type="number" placeholder="Phone Number" name="phnum"><br><br>
+            Position:<input type="text" placeholder="designation" name="position"><br><br>
+            Manager:<input type="text" placeholder="Name of Manager" name="manager"><br><br>
+            Manager email:<input type="email" placeholder="Manager id" name="mngid"><br><br>
+            Start Date:<input type="date" id="start" name="start"><br><br>
+            End Date:<input type="date" id="end" name="end"><br><br>
+
+            <h2>Details of leave</h2><br><br>
+            Leave Request For : <input type = "radio" name = "time" value = "hours"> Hours
+                                <input type = "radio" name = "time" value = "days"> Days<br><br>
+            Leave Type: <input type = "radio" name = "type" value = "vacation"> vacation
+                                <input type = "radio" name = "type" value = "sick"> sick
+                                <input type = "radio" name = "type" value = "quitting"> Quitting
+                                <input type = "radio" name = "type" value = "other"> Other<br><br>
+            Comments:<br>
+            <textarea id="Comments" name="Comments" rows="10" cols="60"></textarea><br><br>
+            <center><input type="submit" value="submit"></center>
+
+        
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
